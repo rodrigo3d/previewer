@@ -1,0 +1,33 @@
+---
+layout: default
+title: "Pré-visualizador"
+permalink: /index.html
+description: "Pré-visualizador | Testando seu site responsivo..."
+---
+
+<header>
+  <h1>
+    <a href="{{ site.url }}{{ site.baseurl }}">RODRIGO3D.COM</a>
+  </h1>
+
+  <nav>
+    <ul>
+      <li><a id="menu-toggle" href="#">☰</a></li>
+      <li><a class="device-button phone" href="#phone" title="Phone">Phone</a></li>
+      <li><a class="device-button phone-landscape" href="#phone-landscape" title="Landscape Phone">Landscape Phone</a></li>
+      <li><a class="device-button tablet" href="#tablet" title="Tablet">Tablet</a></li>
+      <li><a class="device-button tablet-landscape" href="#tablet-landscape" title="Landscape Tablet">Landscape Tablet</a></li>
+      <li><a class="device-button desktop-medium" href="#desktop-medium" title="Medium Desktop">Medium Desktop</a></li>
+      <li><a class="device-button desktop-large" href="#desktop-large" title="Large Desktop">Large Desktop</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="previewer" id="previewer">
+  <div class="previewer-browser">
+    <a href="#" class="refresh">Atualizar</a>
+    <input type="url" id="address" placeholder="Enter the web address...">
+  </div>
+  <iframe src="https://rodrigo3d.com"></iframe>
+  <div class="previewer-extra"></div>
+</div>
